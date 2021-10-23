@@ -217,11 +217,12 @@
     link: https://www.rug-b.de/
     twitter: https://twitter.com/rug_b
 
+# ISSUE: SITE WENT DOWN (10/18/2021)
 - name: Ruby & Friends
-  source: OnRubyFeed
-  feed_url: https://ruby.barcelona/events.json
+#   source: OnRubyFeed
+#   feed_url: https://ruby.barcelona/events.json
   links:
-    link: https://ruby.barcelona/
+#     link: https://ruby.barcelona/
     twitter: https://twitter.com/bcnrails
     github: https://github.com/RubyAndFriends
 
