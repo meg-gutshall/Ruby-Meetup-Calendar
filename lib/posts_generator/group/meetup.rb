@@ -28,9 +28,11 @@ class PostsGenerator::Group::Meetup < PostsGenerator::Group
   end
 
   def source_data
-    @source_data ||= begin
-      json = Net::HTTP.get(URI.parse("https://www.meetup.com/#{meetup_id}/events/json/"))
-      JSON.parse(json)
+    json_string = Net::HTTP.get(URI.parse("https://www.meetup.com/#{meetup_id}/events/json/"))
+    begin
+      @source_data ||= JSON.parse(json_string)
+    rescue JSON::ParserError
+      puts "Invalid JSON"
     end
   end
 end
