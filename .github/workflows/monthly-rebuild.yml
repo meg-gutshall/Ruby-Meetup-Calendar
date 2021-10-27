@@ -1,7 +1,7 @@
 name: Monthly Rebuild
 on:
   schedule:
-    - cron: '0 5 1 * *'
+    # - cron: '0 5 1 * *'
   workflow_dispatch:
 
 jobs:
